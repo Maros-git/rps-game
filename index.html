@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>RPS-game</title>
 </head>
 <body>
     
-    <section class="game">
+    <section class="game" id="gradient">
         <div class="score">
             <div class="player-score">
                  <h2>Player</h2>
@@ -23,7 +24,11 @@
 
         <div class="intro">
             <h1>Rock Paper & Scissors</h1>
-            <button>Let's Play</button>
+            <button class="animate__animated 
+            animate__tada
+            animate__delay-5s
+            animate__infinite 
+            ">Let's Play</button>
         </div>
 
         <div class="match fadeOut">
@@ -38,7 +43,13 @@
                 <button class="scissors">scissors</button>
             </div>
         </div>
-    </section>
+    
+        <div class="generator">
+            <h3>You can create your own background here!</h3>
+            <input class="color1" type="color" name="color1" value="#f78b43">
+            <input class="color2" type="color" name="color2" value="#fcf590">
+        </div>
+</section>
 
     <script src="app.js"></script>
 </body>

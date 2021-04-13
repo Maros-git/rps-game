@@ -121,3 +121,17 @@ const game = () => {
 
 //Start the game function 
 game();
+
+//Background generator
+const color1 = document.querySelector(".color1"); /*bodka lebo oznacujeme class (ako v css)*/
+const color2 = document.querySelector(".color2");
+const section = document.getElementById("gradient");
+
+
+function setGradient() {
+    section.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+}
+
+color1.addEventListener("input", setGradient);
+
+color2.addEventListener("input", setGradient);

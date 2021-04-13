@@ -6,8 +6,9 @@
 
 section {
     height: 100vh;
-    background-image: linear-gradient(30deg, #f78b43, #fcf590);
+    background-image: linear-gradient(to right, #f78b43, #fcf590);
     font-family: sans-serif;
+    
 }
 
 .score {
@@ -144,3 +145,20 @@ div.fadeIn {
         transform: translateY(0px);
     }
 }
+
+.generator {
+    padding-top: 5%;
+    font-size: 2rem; 
+    color: #55524f;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+.color1, .color2 {
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
