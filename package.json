@@ -5,7 +5,7 @@
   "main": "script.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "serve -s build"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "serve": "^11.3.2"
   }
 }
